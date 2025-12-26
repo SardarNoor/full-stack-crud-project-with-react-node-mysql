@@ -31,7 +31,8 @@ let pool;
     app.use("/", router);
 
     // start the server
-    app.listen(port, () => {
-        console.log(`Example app listening on port http://localhost:${port}`);
-    });
+  app.listen(port, '0.0.0.0', () => {
+  console.log(`Backend listening on port ${port}`);
+   });
+
 })();
